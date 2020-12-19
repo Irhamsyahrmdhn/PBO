@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="14.0" prefHeight="43.0" prefWidth="254.0" text="CALCULATOR" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="hasil" alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="67.0" prefHeight="66.0" prefWidth="362.0" style="-fx-border-color: black; -fx-background-color: white;" text="0">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+            <TextField fx:id="angka2" layoutX="332.0" layoutY="152.0" promptText="Masukan Angka" />
+            <TextField fx:id="angka1" layoutX="119.0" layoutY="152.0" promptText="Masukan Angka" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="278.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="tambah" layoutX="189.0" layoutY="14.0" mnemonicParsing="false" onAction="#tmbltambah" prefHeight="22.0" prefWidth="82.0" text="+" />
+            <Button fx:id="kurang" layoutX="327.0" layoutY="14.0" mnemonicParsing="false" onAction="#tmblkurang" prefHeight="22.0" prefWidth="82.0" text="-" />
+            <Button fx:id="kali" layoutX="189.0" layoutY="62.0" mnemonicParsing="false" onAction="#tmblkali" prefHeight="22.0" prefWidth="82.0" text="x" />
+            <Button fx:id="bagi" layoutX="327.0" layoutY="62.0" mnemonicParsing="false" onAction="#tmblbagi" prefHeight="22.0" prefWidth="82.0" text="/" />
+            <Button fx:id="hapus" layoutX="189.0" layoutY="111.0" mnemonicParsing="false" onAction="#hapusA" prefHeight="26.0" prefWidth="222.0" text="Hapus" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
