@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pboreg.Controller">
+   <top>
+      <AnchorPane prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="5.0" prefHeight="57.0" prefWidth="590.0" text="BIO DATA MAHASISWA" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="59.0" layoutY="194.0" prefHeight="25.0" prefWidth="90.0" text="JURUSAN" />
+            <Label layoutX="59.0" layoutY="143.0" prefHeight="25.0" prefWidth="90.0" text="UMUR" />
+            <Label layoutX="59.0" layoutY="52.0" prefHeight="25.0" prefWidth="90.0" text="NIM">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="100.0" prefHeight="26.0" prefWidth="119.0" text="NAMA MAHASISWA" />
+            <TextField fx:id="inNIM" alignment="CENTER" layoutX="344.0" layoutY="52.0" promptText="MASUKAN NIM ANDA" />
+            <TextField fx:id="inJurusan" alignment="CENTER" layoutX="344.0" layoutY="194.0" promptText="MASUKAN JURSAN ANDA" />
+            <TextField fx:id="inUmur" alignment="CENTER" layoutX="344.0" layoutY="143.0" promptText="MASUKAN UMUR ANDA" />
+            <TextField fx:id="inNama" alignment="CENTER" layoutX="344.0" layoutY="100.0" promptText="MASUKAN NAMA ANDA" />
+            <Button fx:id="tmblenter" layoutX="404.0" layoutY="244.0" mnemonicParsing="false" onAction="#intmbl" prefHeight="20.0" prefWidth="88.0" text="ENTER" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
