@@ -3,13 +3,11 @@ package com.pboreg;
 import java.sql.*;
 
 public class Koneksi {
-    //Buat attribut untuk koneksi
-    private Connection con;
 
-    //Buat deklarasi atteribut untuk statement
+    private Connection con;
     private Statement st;
 
-    //definisikan usernamme, password, dan alamat dari sever mysql
+
     public Koneksi(){
         try {
             String user = "root";
@@ -20,7 +18,7 @@ public class Koneksi {
             System.out.println("Eror = " + e.getMessage());
         }
     }
-    //Untuk input data(insert), Edit data (Update), dana hapus data (Delete)
+
     public int manipulasiData(String query){
         try {
             st = con.createStatement();
@@ -30,7 +28,7 @@ public class Koneksi {
             return 0;
         }
     }
-    //Untuk menampilkan data
+
     public ResultSet getData(String query){
         try {
             st = con.createStatement();

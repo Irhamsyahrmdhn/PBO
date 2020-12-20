@@ -17,7 +17,7 @@ public class Controller {
         String umur = inUmur.getText();
         String jurusan = inJurusan.getText();
 
-        //Input data ke tabel pesan pada database pbo-reguler
+
         String query = "INSERT INTO mahasiswa(nama,nim,umur,jurusan) VALUES('" + nama + "','" + nim + "','" + umur + "','" + jurusan + "')";
         int hasil = koneksi.manipulasiData(query);
         if (hasil == 1) {
